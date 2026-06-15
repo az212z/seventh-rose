@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الوردة السابعة · the7rose · تبوك</title>
+<meta name="description" content="الوردة السابعة the7rose في تبوك · ورد وتنسيقات وبالونات وهدايا لكل المناسبات. تصميم مبهج وتوصيل بعناية. اطلب عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f6f0e6;
+  --cream2:#ede3d3;
+  --teal:#1f5a5e;
+  --teal2:#164548;
+  --aqua:#3d8389;
+  --coral:#e0866a;
+  --coral2:#cf6e51;
+  --peach:#f0c3a8;
+  --gold:#c79a4f;
+  --ink:#2a3c3a;
+  --soft:#7e8b86;
+  --line:rgba(31,90,94,.14);
+  --shadow:0 32px 66px -32px rgba(22,69,72,.42);
+  --r:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.8}
+h1,h2,h3{font-family:'Markazi Text',serif;font-weight:700;line-height:1.18}
+.lat{font-family:'Cormorant Garamond',serif;font-style:italic}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--coral2)}
+.eyebrow b{width:7px;height:7px;border-radius:50%;background:var(--coral);display:inline-block}
+
+#pre{position:fixed;inset:0;background:var(--teal);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .7s ease}
+#pre.done{opacity:0;pointer-events:none;display:none}
+#pre .mk{font-family:'Markazi Text';color:var(--peach);font-size:2.8rem;font-weight:700;opacity:0;animation:fin 1s ease forwards}
+#pre .ln{width:0;height:1.5px;background:linear-gradient(90deg,transparent,var(--coral),transparent);animation:gw 1.5s ease forwards}
+@keyframes fin{to{opacity:1}}
+@keyframes gw{to{width:170px}}
+
+nav{position:fixed;top:0;right:0;left:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:20px 32px;transition:all .5s cubic-bezier(.32,.72,0,1)}
+nav.shr{padding:12px 32px;background:rgba(246,240,230,.92);backdrop-filter:blur(14px);box-shadow:0 12px 40px -26px rgba(22,69,72,.5)}
+nav .brand{font-family:'Markazi Text';font-weight:700;font-size:1.5rem;color:var(--teal);display:flex;align-items:center;gap:8px}
+nav .brand i{font-size:1.1rem;color:var(--coral)}
+nav .links{display:flex;gap:30px;align-items:center}
+nav .links a{font-size:.95rem;font-weight:500;color:var(--teal);position:relative;padding:4px 0}
+nav .links a::after{content:"";position:absolute;right:0;bottom:-2px;width:0;height:1.5px;background:var(--coral);transition:width .4s cubic-bezier(.32,.72,0,1)}
+nav .links a:hover::after{width:100%}
+.navcta{background:var(--teal);color:var(--cream)!important;padding:10px 22px;border-radius:40px;font-weight:700;font-size:.88rem;transition:transform .4s cubic-bezier(.32,.72,0,1),background .4s}
+.navcta:hover{transform:translateY(-2px);background:var(--coral2)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:26px;height:2px;background:var(--teal);transition:.4s cubic-bezier(.32,.72,0,1)}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mob{position:fixed;inset:0;background:rgba(22,69,72,.97);z-index:899;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;opacity:0;pointer-events:none;transition:opacity .5s}
+.mob.open{opacity:1;pointer-events:auto}
+.mob a{font-family:'Markazi Text';font-size:1.9rem;color:var(--cream)}
+.mob a.navcta{background:var(--coral);color:#fff!important;font-family:'Tajawal'}
+
+/* hero */
+.hero{position:relative;padding:140px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(240,195,168,.34),transparent 65%);top:-160px;left:-120px;z-index:0}
+.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(61,131,137,.18),transparent 65%);bottom:-150px;right:-100px;z-index:0}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
+.hero .eyebrow{margin-bottom:20px}
+.hero h1{font-size:clamp(2.7rem,6vw,4.8rem);color:var(--teal)}
+.hero h1 em{font-family:'Cormorant Garamond';color:var(--coral2);font-weight:600}
+.hero p.lead{font-size:1.14rem;color:var(--soft);max-width:29rem;margin:22px 0 32px}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 16px 15px 26px;border-radius:46px;font-weight:700;font-size:.98rem;transition:transform .45s cubic-bezier(.32,.72,0,1),box-shadow .45s,background .4s;cursor:pointer;border:0}
+.btn .ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;transition:transform .45s cubic-bezier(.32,.72,0,1)}
+.btn-p{background:var(--coral);color:#fff}
+.btn-p .ic{background:#fff;color:var(--coral2)}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 20px 38px -18px rgba(207,110,81,.55);background:var(--coral2)}
+.btn-p:hover .ic{transform:translateX(-4px)}
+.btn-g{background:transparent;color:var(--teal);border:1.5px solid var(--line);padding:15px 26px}
+.btn-g:hover{transform:translateY(-3px);border-color:var(--teal)}
+.hrate{margin-top:26px;display:flex;align-items:center;gap:12px}
+.hrate .s{color:var(--gold);letter-spacing:2px}
+.hrate small{color:var(--soft);font-size:.9rem}
+.hrate b{color:var(--teal)}
+.himg{position:relative}
+.himg .main{border-radius:var(--r);overflow:hidden;padding:9px;background:#fff;box-shadow:var(--shadow)}
+.himg .main img{width:100%;height:520px;object-fit:cover;border-radius:16px}
+.himg .float{position:absolute;bottom:-20px;left:-18px;background:var(--teal);color:var(--cream);border-radius:18px;padding:16px 22px;box-shadow:var(--shadow);text-align:center}
+.himg .float .n{font-family:'Markazi Text';font-size:1.6rem;color:var(--peach);font-weight:700;line-height:1}
+.himg .float .l{font-size:.72rem;color:rgba(246,240,230,.7)}
+
+.pad{padding:98px 0}
+.sec-h{text-align:center;max-width:42rem;margin:0 auto 56px}
+.sec-h .eyebrow{justify-content:center;margin-bottom:14px}
+.sec-h h2{font-size:clamp(2.1rem,4.6vw,3.1rem);color:var(--teal)}
+.sec-h h2 em{font-family:'Cormorant Garamond';color:var(--coral2)}
+.sec-h p{color:var(--soft);margin-top:10px;font-size:1.04rem}
+
+/* about */
+.about{background:linear-gradient(180deg,var(--cream),var(--cream2))}
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about h2{font-size:clamp(1.9rem,4.2vw,2.8rem);color:var(--teal)}
+.about h2 em{font-family:'Cormorant Garamond';color:var(--coral2)}
+.about p{color:var(--soft);font-size:1.05rem;margin:16px 0}
+.aimg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.aimg img{width:100%;border-radius:18px;object-fit:cover;box-shadow:0 22px 44px -28px rgba(22,69,72,.4)}
+.aimg .t{grid-row:span 2;height:100%}.aimg .t img{height:100%}
+.aimg .s img{height:172px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pills span{background:#fff;border:1px solid var(--line);border-radius:40px;padding:8px 18px;font-size:.88rem;font-weight:500;color:var(--teal)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;overflow:hidden;transition:transform .5s cubic-bezier(.32,.72,0,1),box-shadow .5s}
+.svc:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.svc .icn{width:54px;height:54px;border-radius:50%;background:var(--cream2);display:grid;place-items:center;color:var(--teal);margin-bottom:18px;transition:transform .5s cubic-bezier(.32,.72,0,1),background .5s,color .5s}
+.svc:hover .icn{transform:scale(1.08) rotate(-6deg);background:var(--coral);color:#fff}
+.svc h3{font-size:1.5rem;color:var(--teal);margin-bottom:6px}
+.svc p{color:var(--soft);font-size:.95rem}
+.svc.big{grid-column:span 3;background:linear-gradient(150deg,var(--teal),var(--teal2));color:var(--cream);display:flex;align-items:center;gap:28px}
+.svc.big .icn{background:rgba(240,195,168,.2);color:var(--peach);flex:0 0 auto}
+.svc.big h3{color:#fff;font-size:1.9rem}
+.svc.big p{color:rgba(246,240,230,.8);max-width:42rem}
+
+/* gallery */
+.gal{background:linear-gradient(180deg,var(--cream2),var(--cream))}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:205px;gap:15px}
+.gal-grid figure{overflow:hidden;border-radius:18px;position:relative;box-shadow:0 18px 40px -28px rgba(22,69,72,.5)}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.22,.61,.36,1)}
+.gal-grid figure:hover img{transform:scale(1.07)}
+.gs1{grid-column:span 2;grid-row:span 2}
+.gs2{grid-row:span 2}
+
+/* stats */
+.stats{background:var(--teal);color:var(--cream)}
+.st-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.st .n{font-family:'Markazi Text';font-size:clamp(2.2rem,5vw,3.5rem);color:var(--peach);font-weight:700;line-height:1.1}
+.st .l{color:rgba(246,240,230,.72);font-size:.92rem;margin-top:6px}
+.st{position:relative}
+.st:not(:last-child)::after{content:"";position:absolute;left:0;top:16%;height:68%;width:1px;background:rgba(246,240,230,.16)}
+
+/* cta */
+.cta{padding:108px 0}
+.cbox{position:relative;background:linear-gradient(145deg,var(--coral),var(--peach));border-radius:34px;padding:64px 40px;text-align:center;overflow:hidden;box-shadow:var(--shadow)}
+.cbox::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(255,250,245,.4),transparent 65%);top:-130px;right:-80px}
+.cbox::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(22,69,72,.18),transparent 65%);bottom:-120px;left:-70px}
+.cbox h2{position:relative;color:#fff;font-size:clamp(2rem,4.6vw,3.1rem)}
+.cbox h2 em{font-family:'Cormorant Garamond';color:#fff}
+.cbox p{position:relative;color:rgba(255,255,255,.9);max-width:32rem;margin:14px auto 30px;font-size:1.05rem}
+.cbox .hbtns{position:relative;justify-content:center}
+.cbox .btn-p{background:var(--teal);color:#fff}
+.cbox .btn-p .ic{background:#fff;color:var(--teal)}
+.cbox .btn-g{color:#fff;border-color:rgba(255,255,255,.5)}
+.cbox .btn-g:hover{background:rgba(255,255,255,.16)}
+
+footer{background:var(--teal2);color:rgba(246,240,230,.66);padding:58px 0 28px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer .brand{font-family:'Markazi Text';font-size:1.7rem;color:var(--cream);margin-bottom:12px;font-weight:700}
+footer h4{color:var(--cream);font-size:.98rem;margin-bottom:15px;font-weight:700}
+footer a,footer p.fl{display:block;color:rgba(246,240,230,.56);font-size:.92rem;margin-bottom:10px;transition:color .3s}
+footer a:hover{color:var(--peach)}
+.fbot{border-top:1px solid rgba(246,240,230,.1);padding-top:22px;text-align:center;font-size:.84rem;color:rgba(246,240,230,.42)}
+.fbot a{color:var(--peach)}
+
+.rv{opacity:0;transform:translateY(32px);filter:blur(5px);transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1),filter .9s}
+.rv.in{opacity:1;transform:none;filter:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+.wafab{position:fixed;bottom:24px;left:24px;z-index:800;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6);animation:pulse 2.4s infinite;transition:transform .4s}
+.wafab:hover{transform:scale(1.08)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+@media(max-width:920px){
+  .hgrid{grid-template-columns:1fr;gap:46px}
+  .himg{order:-1}
+  .agrid{grid-template-columns:1fr;gap:40px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc.big{grid-column:span 2}
+  .st-grid{grid-template-columns:1fr 1fr;gap:34px 20px}
+  .st:nth-child(2)::after{display:none}
+  .fgrid{grid-template-columns:1fr;gap:30px}
+  nav .links{display:none}
+  .burger{display:flex}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}
+  .pad{padding:72px 0}
+  .himg .main img{height:400px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc.big{grid-column:span 1;flex-direction:column;text-align:center;align-items:center}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gs1{grid-column:span 2;grid-row:span 1}
+  .hbtns{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .cbox{padding:46px 22px}
+}
+</style>
+</head>
+<body>
+<div id="pre"><div class="mk">الوردة السابعة</div><div class="ln"></div></div>
+
+<nav id="nav">
+  <a class="brand" href="#top"><i>✿</i> الوردة السابعة</a>
+  <div class="links">
+    <a href="#about">عن المتجر</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#gallery">أعمالنا</a>
+    <a class="navcta" href="https://wa.me/966507388120" target="_blank" rel="noopener">اطلب الآن</a>
+  </div>
+  <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob" id="mob">
+  <a href="#about">عن المتجر</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#gallery">أعمالنا</a>
+  <a class="navcta" href="https://wa.me/966507388120" target="_blank" rel="noopener">اطلب الآن</a>
+</div>
+
+<a class="wafab" href="https://wa.me/966507388120" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg width="29" height="29" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.225zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<span id="top"></span>
+<header class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <span class="eyebrow rv"><b></b> ورد · بالونات · هدايا · تبوك</span>
+      <h1 class="rv d1">نصنع لكِ<br><em>لحظة فرح.</em></h1>
+      <p class="lead rv d2">الوردة السابعة · وجهتكِ للورد والبالونات والهدايا وتنسيق المناسبات في تبوك. نصمّم كل تفصيلة لتجعل لحظتكِ أبهج وأجمل.</p>
+      <div class="hbtns rv d3">
+        <a class="btn btn-p" href="https://wa.me/966507388120" target="_blank" rel="noopener">اطلبي الآن <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#cf6e51" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span></a>
+        <a class="btn btn-g" href="#services">خدماتنا</a>
+      </div>
+      <div class="hrate rv d3"><span class="s">★★★★★</span><small><b>4.7</b> · أكثر من <b>٩٨٧</b> تقييم على Google</small></div>
+    </div>
+    <div class="himg rv d2">
+      <div class="main"><img src="img/hero.jpg" alt="تنسيقات الوردة السابعة"></div>
+      <div class="float"><div class="n">٩٨٧+</div><div class="l">تقييم موثّق</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="about pad" id="about">
+  <div class="wrap agrid">
+    <div class="aimg rv">
+      <div class="t"><img src="img/interior.jpg" alt="داخل الوردة السابعة"></div>
+      <div class="s"><img src="img/arrange.jpg" alt="تنسيق ورد"></div>
+      <div class="s"><img src="img/storefront.jpg" alt="متجر الوردة السابعة"></div>
+    </div>
+    <div class="rv d1">
+      <span class="eyebrow"><b></b> عن الوردة السابعة</span>
+      <h2>الفرحة <em>في كل تفصيلة.</em></h2>
+      <p>في <strong>الوردة السابعة</strong> نصنع البهجة. من باقة ورد إلى تنسيق بالونات وهدية مميزة، نجمع كل ما يجعل مناسبتكِ أجمل في مكانٍ واحد، بذوقٍ مبهج واهتمامٍ بأدقّ التفاصيل في تبوك.</p>
+      <p>ثقة أكثر من ٩٨٧ عميلاً وتقييم ٤٫٧ شهادة على شغفنا بالفرح.</p>
+      <div class="pills">
+        <span>ورد وتنسيقات</span><span>بالونات وديكور</span><span>هدايا مميزة</span><span>توصيل سريع</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="services">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <span class="eyebrow"><b></b> خدماتنا</span>
+      <h2>لكل مناسبة <em>بهجتها.</em></h2>
+      <p>من الباقة إلى تنسيق الحفلة الكامل، نصنع لكِ الفرح.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc big rv">
+        <div class="icn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="9" r="6"/><path d="M12 15v6M9 21h6"/></svg></div>
+        <div><h3>تنسيق البالونات والمناسبات</h3><p>نحوّل مناسبتكِ إلى لوحة من البهجة؛ أعياد ميلاد، استقبالات مواليد، تخرّج، وكل لحظة تستحقّ الاحتفال.</p></div>
+      </div>
+      <div class="svc rv d1"><div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>باقات الورد</h3><p>باقات بألوان مبهجة وتنسيقات متنوّعة لكل ذوق.</p></div>
+      <div class="svc rv d2"><div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7"/></svg></div><h3>الهدايا</h3><p>هدايا مغلّفة بأناقة تُسعد من تحبّين.</p></div>
+      <div class="svc rv d3"><div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12c4-1 6-3 9-9 3 6 5 8 9 9-4 1-6 3-9 9-3-6-5-8-9-9z"/></svg></div><h3>صناديق الورد</h3><p>تنسيقات راقية في صناديق أنيقة.</p></div>
+      <div class="svc rv d1"><div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div><h3>تصاميم خاصة</h3><p>تنسيقات حسب الطلب تناسب فكرتكِ.</p></div>
+      <div class="svc rv d2"><div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 17h14M6 17V9a6 6 0 0112 0v8M3 21h18"/></svg></div><h3>التوصيل</h3><p>توصيل سريع وآمن في تبوك.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gal pad" id="gallery">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <span class="eyebrow"><b></b> أعمالنا</span>
+      <h2>لمحاتٌ <em>مبهجة.</em></h2>
+      <p>من تنسيقاتنا ومتجرنا في تبوك.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gs1 rv"><img src="img/hero.jpg" alt="تنسيق مبهج"></figure>
+      <figure class="gs2 rv d1"><img src="img/interior.jpg" alt="داخل المتجر"></figure>
+      <figure class="rv d2"><img src="img/arrange.jpg" alt="تنسيق ورد"></figure>
+      <figure class="rv d1"><img src="img/branded.jpg" alt="واجهة المتجر"></figure>
+      <figure class="rv d3"><img src="img/interior2.jpg" alt="عرض المنتجات"></figure>
+      <figure class="rv d2"><img src="img/exterior.jpg" alt="المتجر"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="stats pad">
+  <div class="wrap st-grid">
+    <div class="st rv"><div class="n"><span data-count="987">0</span>+</div><div class="l">تقييم موثّق</div></div>
+    <div class="st rv d1"><div class="n"><span data-count="4.7" data-dec="1">0</span></div><div class="l">تقييم Google</div></div>
+    <div class="st rv d2"><div class="n"><span data-count="6">0</span></div><div class="l">خدمات متنوّعة</div></div>
+    <div class="st rv d3"><div class="n"><span data-count="100">0</span>%</div><div class="l">فرح وبهجة</div></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cbox rv">
+      <h2>اصنعي لحظتكِ <em>معنا.</em></h2>
+      <p>اطلبي تنسيقكِ أو هديتكِ من الوردة السابعة، ودعينا نضيف البهجة إلى مناسبتكِ في تبوك.</p>
+      <div class="hbtns">
+        <a class="btn btn-p" href="https://wa.me/966507388120" target="_blank" rel="noopener">اطلبي عبر واتساب <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f5a5e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></span></a>
+        <a class="btn btn-g" href="tel:+966507388120">اتصلي · 0507388120</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="rv">
+        <div class="brand">✿ الوردة السابعة</div>
+        <p class="fl">الوردة السابعة the7rose · ورد وبالونات وهدايا وتنسيق مناسبات بذوقٍ مبهج في تبوك.</p>
+      </div>
+      <div class="rv d1">
+        <h4>روابط</h4>
+        <a href="#about">عن المتجر</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#gallery">أعمالنا</a>
+      </div>
+      <div class="rv d2">
+        <h4>تواصلي معنا</h4>
+        <a href="https://wa.me/966507388120" target="_blank" rel="noopener">واتساب · 0507388120</a>
+        <a href="tel:+966507388120">اتصال مباشر</a>
+        <p class="fl">تبوك · المملكة العربية السعودية</p>
+      </div>
+    </div>
+    <div class="fbot">© <span id="yr"></span> الوردة السابعة the7rose · جميع الحقوق محفوظة · <a href="https://wa.me/966505989304" target="_blank" rel="noopener" style="font-family:'Cormorant Garamond',serif;font-style:italic;letter-spacing:.04em">designed by ali</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pre=document.getElementById('pre');
+  function hide(){if(pre)pre.classList.add('done')}
+  window.addEventListener('load',function(){setTimeout(hide,600)});
+  setTimeout(hide,2600);
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){if(window.scrollY>40)nav.classList.add('shr');else nav.classList.remove('shr');});
+  var burger=document.getElementById('burger'),mob=document.getElementById('mob');
+  if(burger){burger.addEventListener('click',function(){burger.classList.toggle('x');mob.classList.toggle('open')});}
+  mob.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){burger.classList.remove('x');mob.classList.remove('open')})});
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rvs.forEach(function(el){io.observe(el)});}else{rvs.forEach(function(el){el.classList.add('in')});}
+  window.addEventListener('scroll',function(){rvs.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight*0.95)el.classList.add('in')})},{passive:true});
+  setTimeout(function(){rvs.forEach(function(el){el.classList.add('in')})},3000);
+  var counted=false;
+  function counters(){if(counted)return;counted=true;document.querySelectorAll('[data-count]').forEach(function(el){var t=parseFloat(el.getAttribute('data-count')),dec=el.getAttribute('data-dec')?1:0,s=0,step=t/60;var iv=setInterval(function(){s+=step;if(s>=t){s=t;clearInterval(iv)}el.textContent=dec?s.toFixed(1):Math.floor(s)},22);});}
+  var stEl=document.querySelector('.stats');
+  if(stEl&&'IntersectionObserver' in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){counters();io2.disconnect()}})},{threshold:.3});io2.observe(stEl);}else counters();
+  setTimeout(function(){document.querySelectorAll('[data-count]').forEach(function(el){if(el.textContent==='0')el.textContent=el.getAttribute('data-count')})},3200);
+})();
+</script>
+</body>
+</html>
